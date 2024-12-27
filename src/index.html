@@ -1,0 +1,85 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Container</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+    <!-- Navbar -->
+    <nav class="p-3 flex bg-white justify-between items-center md:gap-10">
+        <a href="#" id="nabBar" class="flex items-center gap-2">
+        <img class="object-cover max-h-12 max-w-12" src="/assets/asset 0.png" alt="11111111111111">
+        <span class="text-lg font-medium font-display">To Desktop</span>
+        </a>
+
+        <div id="nav-menu" class="hidden md:flex md:gap-12 justify-center items-center">
+            <a href="#" class="font-medium hover:text-primary">Pricing</a>
+            <a href="#" class="font-medium hover:text-primary">Docs</a>
+            <a href="#" class="font-medium hover:text-primary">Challengelog</a>
+            <a href="#" class="font-medium hover:text-primary">Blog</a>
+            <a href="#" class="font-medium hover:text-primary">Login</a>
+        </div>
+
+        <button class="hidden md:block md:flex items-center border rounded-lg gap-2 px-6 hover:border-gray-600">
+            <img src="/assets/asset 1.svg" alt="11111111111111">
+            <a href="#" class="hidden md:block p-2 font-medium">Electon Developer</a>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="p-2 md:hidden " onclick= handleToggleMenu()>
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+        <div id="navDialog" class="fixed bg-white inset-0 p-2 md:hidden">
+            <div id="nav-bar" class="flex justify-between p-3">
+                <a href="#" id="brand" class="flex items-center gap-2">
+                    <img class="object-cover max-h-12 max-w-12" src="/assets/asset 0.png" alt="11111111111111">
+                    <span class="text-lg font-medium font-display">To Desktop</span>
+                </a>
+                
+
+                <button class="p-2 md:hidden" onclick= handleToggleMenu()>
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div class="px-4 mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">ChallengeLog</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blog</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+            </div>
+            <div class="h-[1px]  bg-gray-100"></div>
+
+            <button class=" mt-6 w-full flex items-center  gap-2 px-6 rounded-lg hover:bg-gray-50">
+                <img src="/assets/asset 1.svg" alt="11111111111111">
+                <a href="#" class=" block p-2 font-medium">Electon Developer</a>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <!-- herosection -->
+         <div id="hero" class="min-h-screen bg-gradient-to-br from bg-purple-50 via-orange-50 to-transparent">
+            <div id="hero-Contaner" class = "max-w-4xl mx-auto flex flex-col">
+                <div id="version-section" class="w-fit mt-8 flex items-center gap-2 border border-yellow-400 bg-yellow-50 px-3 py-1 rounded-lg">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border-yellow-600"></div>
+                    <p class="text-yellow-600 font-medium font-dispaly">v0.25.0:</p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 max-h-12 max-w-14"></i>
+
+                    </div>
+                </div>
+
+            </div>
+         </div>
+    </main>
+        
+    </body>
+    <script src="script.js"></script>
+    </html>
